@@ -1142,7 +1142,7 @@ if v ~= game.Players.LocalPlayer then
 local args = {
     [1] = 15017766279,
     [2] = Enum.NormalId.Front,
-    [3] = 6,
+    [3] = 2048,
     [4] = v.Character.HumanoidRootPart,
     [5] = v.Character.HumanoidRootPart.CFrame * CFrame.new(-100000,0,0)
 }
