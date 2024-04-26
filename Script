@@ -1178,7 +1178,7 @@ for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
 end
 	  if LoopResetAll == false then
    LoopResetAll = true 
-while LoopResetAll do
+while LoopResetAll do task.wait(0.9)
 for _, v in pairs(game.Players:GetPlayers()) do
 if v ~= game.Players.LocalPlayer then
 local args = {
@@ -1193,7 +1193,6 @@ game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(un
 end
 end
 end
-wait(0.9)
 end
 else 
 LoopResetAll = false
