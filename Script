@@ -5,18 +5,18 @@ if not ps then
 local Window = OrionLib:MakeWindow({Name = "Murder Mystery 2 Script By GTAonvova", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
-	Name = "Buy",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Buy",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
 local Section = Tab:AddSection({
-	Name = ""
+    Name = ""
 })
 
 Tab:AddButton({
-	Name = "Buy Script",
-	Callback = function()
+    Name = "Buy Script",
+    Callback = function()
 setclipboard("https://www.roblox.com/game-pass/768043728")
 end
 })
@@ -26,19 +26,19 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "Murder Mystery 2 Script By GTAonvova", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
-	Name = "Gun Maker",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Gun Maker",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
 local Section = Tab:AddSection({
-	Name = "Gun Maker"
+    Name = "Gun Maker"
 })
 
 Tab:AddButton({
-	Name = "Dick",
-	Callback = function()
-      		pl = game.Players.LocalPlayer
+    Name = "Dick",
+    Callback = function()
+              pl = game.Players.LocalPlayer
 s = pl.Backpack:GetChildren()
 s0 = {}
 for _, x in s do if x:IsA("Folder") then wait() else table.insert(s0, x) end end
@@ -57,13 +57,13 @@ s0[6].Grip = CFrame.new(1.5, -1.70000005, 1.70000005, 1, 0, 0, 0, 0, -1, 0, 1, 0
 s0[6].Parent = pl.Character
 s0[7].Grip = CFrame.new(1.5, -2.70000005, 1.70000005, 1, 0, 0, 0, 0, -1, 0, 1, 0)
 s0[7].Parent = pl.Character
-  	end    
+      end    
 })
 
 Tab:AddButton({
-	Name = "Small Dick",
-	Callback = function()
-      		pl = game.Players.LocalPlayer
+    Name = "Small Dick",
+    Callback = function()
+              pl = game.Players.LocalPlayer
 s = pl.Backpack:GetChildren()
 s0 = {}
 for _, x in s do if x:IsA("Folder") then wait() else table.insert(s0, x) end end
@@ -78,13 +78,13 @@ s0[4].Grip = CFrame.new(2., 0.300000012, 1.70000005, 1, 0, 0, 0, 0, -1, 0, 1, 0)
 s0[4].Parent = pl.Character
 s0[5].Grip = CFrame.new(1.5, -0.700000048, 1.70000005, 1, 0, 0, 0, 0, -1, 0, 1, 0)
 s0[5].Parent = pl.Character
-  	end    
+      end    
 })
 
 Tab:AddButton({
-	Name = "Big Dick",
-	Callback = function()
-      		pl = game.Players.LocalPlayer
+    Name = "Big Dick",
+    Callback = function()
+              pl = game.Players.LocalPlayer
 s = pl.Backpack:GetChildren()
 s0 = {}
 for _, x in s do if x:IsA("Folder") then wait() else table.insert(s0, x) end end
@@ -109,13 +109,13 @@ s0[9].Grip = CFrame.new(1.5, -4.70000005, 1.70000005, 1, 0, 0, 0, 0, -1, 0, 1, 0
 s0[9].Parent = pl.Character
 s0[10].Grip = CFrame.new(1.5, -5.70000005, 1.70000005, 1, 0, 0, 0, 0, -1, 0, 1, 0)
 s0[10].Parent = pl.Character
-  	end    
+      end    
 })
 
 Tab:AddButton({
-	Name = "Very Big Dick",
-	Callback = function()
-      		pl = game.Players.LocalPlayer
+    Name = "Very Big Dick",
+    Callback = function()
+              pl = game.Players.LocalPlayer
 s = pl.Backpack:GetChildren()
 s0 = {}
 for _, x in s do if x:IsA("Folder") then wait() else table.insert(s0, x) end end
@@ -150,13 +150,13 @@ s0[14].Grip = CFrame.new(1.5, -9.70000005, 1.70000005, 1, 0, 0, 0, 0, -1, 0, 1, 
 s0[14].Parent = pl.Character
 s0[15].Grip = CFrame.new(1.5, -10.70000005, 1.70000005, 1, 0, 0, 0, 0, -1, 0, 1, 0)
 s0[15].Parent = pl.Character
-  	end    
+      end    
 })
 
 Tab:AddButton({
-	Name = "Dick In Ass",
-	Callback = function()
-      		pl = game.Players.LocalPlayer
+    Name = "Dick In Ass",
+    Callback = function()
+              pl = game.Players.LocalPlayer
 s = pl.Backpack:GetChildren()
 s0 = {}
 for _, x in s do if x:IsA("Folder") then wait() else table.insert(s0, x) end end
@@ -175,13 +175,13 @@ s0[6].Grip = CFrame.new(1, 6.30000019, 1.70000005, 1, 0, 0, 0, 0, -1, 0, 1, 0)
 s0[6].Parent = pl.Character
 s0[7].Grip = CFrame.new(2, 6.30000019, 1.70000005, 1, 0, 0, 0, 0, -1, 0, 1, 0)
 s0[7].Parent = pl.Character
-  	end    
+      end    
 })
 
 Tab:AddButton({
-	Name = "Heart",
-	Callback = function()
-      		pl = game.Players.LocalPlayer
+    Name = "Heart",
+    Callback = function()
+              pl = game.Players.LocalPlayer
 s = pl.Backpack:GetChildren()
 s0 = {}
 for _, x in s do if x:IsA("Folder") then wait() else table.insert(s0, x) end end
@@ -208,13 +208,13 @@ s0[10].Grip = CFrame.new(1, 0.300000012, -3.29999995, 1, 0, 0, 0, 0, -1, 0, 1, 0
 s0[10].Parent = pl.Character
 s0[11].Grip = CFrame.new(0, -0.699999988, -0.300000012, 1, 0, 0, 0, 0, -1, 0, 1, 0)
 s0[11].Parent = pl.Character
-  	end    
+      end    
 })
 
 Tab:AddButton({
-	Name = "Sqare",
-	Callback = function()
-      		pl = game.Players.LocalPlayer
+    Name = "Sqare",
+    Callback = function()
+              pl = game.Players.LocalPlayer
 s = pl.Backpack:GetChildren()
 s0 = {}
 for _, x in s do if x:IsA("Folder") then wait() else table.insert(s0, x) end end
@@ -245,13 +245,13 @@ s0[12].Grip = CFrame.new(2, 0.300000012, -5.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0
 s0[12].Parent = pl.Character
 s0[13].Grip = CFrame.new(3, 0.300000012, -5.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
 s0[13].Parent = pl.Character
-  	end    
+      end    
 })
 
 Tab:AddButton({
-	Name = "Rizz",
-	Callback = function()
-      		pl = game.Players.LocalPlayer
+    Name = "Rizz",
+    Callback = function()
+              pl = game.Players.LocalPlayer
 s = pl.Backpack:GetChildren()
 s0 = {}
 for _, x in s do if x:IsA("Folder") then wait() else table.insert(s0, x) end end
@@ -286,13 +286,13 @@ s0[14].Grip = CFrame.new(4, 0.300000012, -6.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0
 s0[14].Parent = pl.Character
 s0[15].Grip = CFrame.new(-2, 0.300000012, -7.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
 s0[15].Parent = pl.Character
-  	end    
+      end    
 })
 
 Tab:AddButton({
-	Name = "Dick Text",
-	Callback = function()
-      		pl = game.Players.LocalPlayer
+    Name = "Dick Text",
+    Callback = function()
+              pl = game.Players.LocalPlayer
 s = pl.Backpack:GetChildren()
 s0 = {}
 for _, x in s do if x:IsA("Folder") then wait() else table.insert(s0, x) end end
@@ -355,13 +355,13 @@ s0[28].Grip = CFrame.new(10, 0.300000012, -3.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 
 s0[28].Parent = pl.Character
 s0[29].Grip = CFrame.new(8, 0.300000012, -6.30000019, 1, 0, 0, 0, 0, -1, 0, 1, 0)
 s0[29].Parent = pl.Character
-  	end    
+      end    
 })
 
 Tab:AddButton({
-	Name = "More Guns",
-	Callback = function()
-      		pl = game.Players.LocalPlayer
+    Name = "More Guns",
+    Callback = function()
+              pl = game.Players.LocalPlayer
 s = pl.Backpack:GetChildren()
 s0 = {}
 for _, x in s do if x:IsA("Folder") then wait() else table.insert(s0, x) end end
@@ -410,12 +410,12 @@ s0[22].Grip = CFrame.new(0, -5, -2)
 s0[22].Parent = pl.Character
 s0[23].Grip = CFrame.new(0, 3, -3)
 s0[23].Parent = pl.Character
-  	end    
+      end    
 })
 
 Tab:AddButton({
-	Name = "More Guns 2",
-	Callback = function()
+    Name = "More Guns 2",
+    Callback = function()
 plr = game.Players.LocalPlayer
 toolc = plr.Backpack:GetChildren()
 x = -20
@@ -447,8 +447,8 @@ end
 })
 
 Tab:AddButton({
-	Name = "Cube",
-	Callback = function()
+    Name = "Cube",
+    Callback = function()
 plr = game.Players.LocalPlayer
 toolc = plr.Backpack:GetChildren()
 x = -5
@@ -482,9 +482,9 @@ end
 
 
 local Tab = Window:MakeTab({
-	Name = "Player",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Player",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
 Tab:AddTextbox({
@@ -497,8 +497,8 @@ Tab:AddTextbox({
 })
 
 Tab:AddButton({
-	Name = "Reset Speed",
-	Callback = function()
+    Name = "Reset Speed",
+    Callback = function()
   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
  end
  })
@@ -513,8 +513,8 @@ Tab:AddTextbox({
 })
 
 Tab:AddButton({
-	Name = "Reset Jump Power",
-	Callback = function()
+    Name = "Reset Jump Power",
+    Callback = function()
   game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
  end
  })
@@ -527,25 +527,25 @@ Tab:AddButton({
 local RunService = game:GetService("RunService")
 function OnNoclipp()
 local Noclipping = nil
-	Clip = false
-	wait(0.1)
-	local function NoclipLoop()
-		if Clip == false and game.Players.LocalPlayer.Character ~= nil then
-			for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-				if child:IsA("BasePart") and child.CanCollide == true and child.Name ~= floatName then
-					child.CanCollide = false
-				end
-			end
-		end
-	end
-	Noclipping = RunService.Stepped:Connect(NoclipLoop)
+    Clip = false
+    wait(0.1)
+    local function NoclipLoop()
+        if Clip == false and game.Players.LocalPlayer.Character ~= nil then
+            for _, child in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+                if child:IsA("BasePart") and child.CanCollide == true and child.Name ~= floatName then
+                    child.CanCollide = false
+                end
+            end
+        end
+    end
+    Noclipping = RunService.Stepped:Connect(NoclipLoop)
 end
 
 function OffNoclipp()
-	if Noclipping then
-		Noclipping:Disconnect()
-	end
-	Clip = true
+    if Noclipping then
+        Noclipping:Disconnect()
+    end
+    Clip = true
 end
 
  if Value then
@@ -557,49 +557,49 @@ end
 })
 
 Tab:AddButton({
-	Name = "fast Anim",
-	Callback = function()
-	local Hum = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid") or Char:FindFirstChildOfClass("AnimationController")
-	for i,v in next, Hum:GetPlayingAnimationTracks() do
-		v:AdjustSpeed(100)
-	end
-	end
+    Name = "fast Anim",
+    Callback = function()
+    local Hum = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid") or Char:FindFirstChildOfClass("AnimationController")
+    for i,v in next, Hum:GetPlayingAnimationTracks() do
+        v:AdjustSpeed(100)
+    end
+    end
 })
 
 Tab:AddButton({
-	Name = "Slow Anim",
-	Callback = function()
-	local Hum = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid") or Char:FindFirstChildOfClass("AnimationController")
-	for i,v in next, Hum:GetPlayingAnimationTracks() do
-		v:AdjustSpeed(0.5)
-	end
-	end
+    Name = "Slow Anim",
+    Callback = function()
+    local Hum = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid") or Char:FindFirstChildOfClass("AnimationController")
+    for i,v in next, Hum:GetPlayingAnimationTracks() do
+        v:AdjustSpeed(0.5)
+    end
+    end
 })
 
 Tab:AddButton({
-	Name = "Very Slow Anim",
-	Callback = function()
-		local Hum = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid") or Char:FindFirstChildOfClass("AnimationController")
-	for i,v in next, Hum:GetPlayingAnimationTracks() do
-		v:AdjustSpeed(0.1)
-	end
-	end
+    Name = "Very Slow Anim",
+    Callback = function()
+        local Hum = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid") or Char:FindFirstChildOfClass("AnimationController")
+    for i,v in next, Hum:GetPlayingAnimationTracks() do
+        v:AdjustSpeed(0.1)
+    end
+    end
 })
 
 Tab:AddButton({
-	Name = "Stop Anim",
-	Callback = function()
-		local Hum = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid") or Char:FindFirstChildOfClass("AnimationController")
-	for i,v in next, Hum:GetPlayingAnimationTracks() do
-		v:AdjustSpeed(0)
-	end
-	end
+    Name = "Stop Anim",
+    Callback = function()
+        local Hum = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid") or Char:FindFirstChildOfClass("AnimationController")
+    for i,v in next, Hum:GetPlayingAnimationTracks() do
+        v:AdjustSpeed(0)
+    end
+    end
 })
 
 local Tab = Window:MakeTab({
-	Name = "Esp",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Esp",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -615,7 +615,7 @@ local camera = game.Workspace.CurrentCamera
 
 local folder = Instance.new("Folder",CoreGui)
 folder.Name = "ESP Holder"
-	
+    
 local function AddBillboard(player)
     local billboard = Instance.new("BillboardGui",folder)
     billboard.Name = player.Name
@@ -689,9 +689,9 @@ function GetSheriff()
 end
 
 Tab:AddToggle({
-	Name = "Esp All Players",
-	Default = false,
-	Callback = function(value)
+    Name = "Esp All Players",
+    Default = false,
+    Callback = function(value)
 getgenv().AllEsp = value
         for i, v in pairs(folder:GetChildren()) do
             if v:IsA("BillboardGui") and game:GetService("Players")[tostring(v.Name)] then
@@ -706,10 +706,10 @@ getgenv().AllEsp = value
 })
 
 Tab:AddToggle({
-	Name = "Esp Murder",
-	Default = false,
-	Callback = function(value)
-	getgenv().MurderEsp = value
+    Name = "Esp Murder",
+    Default = false,
+    Callback = function(value)
+    getgenv().MurderEsp = value
         while getgenv().MurderEsp do
             wait()
             pcall(function()
@@ -730,11 +730,11 @@ end
 })
 
 Tab:AddToggle({
-	Name = "Esp Sherif",
-	Default = false,
-	Callback = function(value)
+    Name = "Esp Sherif",
+    Default = false,
+    Callback = function(value)
 
-	getgenv().SheriffEsp = value
+    getgenv().SheriffEsp = value
         while getgenv().SheriffEsp do
             wait()
             pcall(function()
@@ -755,35 +755,35 @@ end
 })
 
 local Tab = Window:MakeTab({
-	Name = "Teleport",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Teleport",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "Teleport Lobby",
-	Callback = function()
+    Name = "Teleport Lobby",
+    Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-95.57349395751953, 138.09788513183594, 22.181364059448242)
 end
 })
 
 Tab:AddButton({
-	Name = "Teleport Map",
-	Callback = function()
-			local Workplace = workspace:GetChildren()
-			
-			for i, Thing in pairs(Workplace) do
-			
-			    local ThingChildren = Thing:GetChildren()
-			    for i, Child in pairs(ThingChildren) do
-			        if Child.Name == "Spawns" then
-			           
-			           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Child.Spawn.CFrame
-			
-			        end
-			    end
-			end
-		end
+    Name = "Teleport Map",
+    Callback = function()
+            local Workplace = workspace:GetChildren()
+            
+            for i, Thing in pairs(Workplace) do
+            
+                local ThingChildren = Thing:GetChildren()
+                for i, Child in pairs(ThingChildren) do
+                    if Child.Name == "Spawns" then
+                       
+                       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Child.Spawn.CFrame
+            
+                    end
+                end
+            end
+        end
 })
 
 local plrs = game.Players
@@ -818,52 +818,52 @@ Tab:AddDropdown({
 })
 
 Tab:AddButton({
-	Name = "Teleport Murder",
-	Callback = function()
-			local Players = game:GetService("Players")			
-			for i, player in pairs(Players:GetPlayers()) do
-				
-			    local bp = player.Backpack:GetChildren()
-			    for i, tool in pairs(bp) do
-			        if tool.Name == "Knife" then
-													
-				    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[tool.Parent.Parent.Name].Character.HumanoidRootPart.CFrame
-				
-					end
-				end
-			
-			end
-		end
+    Name = "Teleport Murder",
+    Callback = function()
+            local Players = game:GetService("Players")            
+            for i, player in pairs(Players:GetPlayers()) do
+                
+                local bp = player.Backpack:GetChildren()
+                for i, tool in pairs(bp) do
+                    if tool.Name == "Knife" then
+                                                    
+                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[tool.Parent.Parent.Name].Character.HumanoidRootPart.CFrame
+                
+                    end
+                end
+            
+            end
+        end
 })
 
 Tab:AddButton({
-	Name = "Teleport Sheriff",
-	Callback = function()
-			local Players = game:GetService("Players")			
-			for i, player in pairs(Players:GetPlayers()) do
-				
-			    local bp = player.Backpack:GetChildren()
-			    for i, tool in pairs(bp) do
-			        if tool.Name == "Gun" then
-													
-				    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[tool.Parent.Parent.Name].Character.HumanoidRootPart.CFrame
-				
-					end
-				end
-			
-			end
-		end
+    Name = "Teleport Sheriff",
+    Callback = function()
+            local Players = game:GetService("Players")            
+            for i, player in pairs(Players:GetPlayers()) do
+                
+                local bp = player.Backpack:GetChildren()
+                for i, tool in pairs(bp) do
+                    if tool.Name == "Gun" then
+                                                    
+                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[tool.Parent.Parent.Name].Character.HumanoidRootPart.CFrame
+                
+                    end
+                end
+            
+            end
+        end
 })
 
 local Tab = Window:MakeTab({
-	Name = "Spray Paint",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Spray Paint",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "Egor Fedotov",
-	Callback = function()
+    Name = "Egor Fedotov",
+    Callback = function()
 local args = {
     [1] = "SprayPaint"
 }
@@ -904,12 +904,12 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
 end
-	end
+    end
 })
 
 Tab:AddButton({
-	Name = "Naruto Fan",
-	Callback = function()
+    Name = "Naruto Fan",
+    Callback = function()
 local args = {
     [1] = "SprayPaint"
 }
@@ -950,12 +950,12 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
 end
-	end
+    end
 })
 
 Tab:AddButton({
-	Name = "Nikilis Face Reveal",
-	Callback = function()
+    Name = "Nikilis Face Reveal",
+    Callback = function()
 local args = {
     [1] = "SprayPaint"
 }
@@ -996,7 +996,7 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
 end
-	end
+    end
 })
 
 Tab:AddButton({
@@ -1117,8 +1117,8 @@ game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(un
 })
 
 Tab:AddButton({
-	Name = "Reset All",
-	Callback = function()
+    Name = "Reset All",
+    Callback = function()
 local args = {
     [1] = "SprayPaint"
 }
@@ -1150,13 +1150,60 @@ local args = {
 game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
 end
 end
+    end
+})
+
+Tab:AddToggle({
+	Name = "Loop Reset All",
+ Default = false,
+	Callback = function(Value)
+	LoopResetAll = false
+	if Value then
+local args = {
+    [1] = "SprayPaint"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Extras"):WaitForChild("ReplicateToy"):InvokeServer(unpack(args))
+
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Emotes" then
+            v.Parent = game.Players.LocalPlayer.Character
+    end
+end
+
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "SprayPaint" then
+            v.Parent = game.Players.LocalPlayer.Character
+    end
+end
+	  if LoopResetAll == false then
+   LoopResetAll = true 
+while LoopResetAll do task.wait(0.10)
+for _, v in pairs(game.Players:GetPlayers()) do
+if v ~= game.Players.LocalPlayer then
+local args = {
+    [1] = 15017766279,
+    [2] = Enum.NormalId.Front,
+    [3] = 2048,
+    [4] = v.Character.HumanoidRootPart,
+    [5] = CFrame.new(0,-1000,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+end
+end
+end
+end
+else 
+LoopResetAll = false
+	end
 	end
 })
 
 local Tab = Window:MakeTab({
-	Name = "Misc",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Misc",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
 Tab:AddToggle({
@@ -1202,10 +1249,10 @@ end
 })
 
 Tab:AddButton({
-	Name = "Free Emotes",
-	Callback = function()
-	require(game:GetService('ReplicatedStorage').Modules.EmoteModule).GeneratePage({"headless","zombie","zen","ninja","floss","dab"},game:GetService("Players").LocalPlayer.PlayerGui.MainGUI.Game:FindFirstChild("Emotes"),'Free Emotes')
-	end
+    Name = "Free Emotes",
+    Callback = function()
+    require(game:GetService('ReplicatedStorage').Modules.EmoteModule).GeneratePage({"headless","zombie","zen","ninja","floss","dab"},game:GetService("Players").LocalPlayer.PlayerGui.MainGUI.Game:FindFirstChild("Emotes"),'Free Emotes')
+    end
 })
 
 Tab:AddToggle({
@@ -1225,7 +1272,7 @@ else
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Gameplay"):WaitForChild("Stealth"):FireServer(unpack(args))
 end
- 		getgenv().PlayerPet = Value
+         getgenv().PlayerPet = Value
          while PlayerPet do task.wait()
 local args = {
     [1] = ""
@@ -1244,7 +1291,7 @@ Tab:AddTextbox({
  Default = "",
  TextDisappear = true,
  Callback = function(value)
-	Target = Target[1]
+    Target = Target[1]
 for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
 if v.Name == "Knife" then
 game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
@@ -1266,8 +1313,8 @@ end
 })
 
 Tab:AddButton({
-	Name = "Kill Sheriff",
-	Callback = function()
+    Name = "Kill Sheriff",
+    Callback = function()
 for _,v in pairs(game.Players:GetPlayers()) do
 if v.Character ~= nil and v.Backpack:FindFirstChild("Gun") or v.Character:FindFirstChild("Gun") then
 wait(0.1)
@@ -1288,12 +1335,36 @@ end
 end
 end
 end
-	end
+    end
 })
 
 Tab:AddButton({
-	Name = "Fake Knife",
-	Callback = function()
+    Name = "Kill All",
+    Callback = function()
+    local z = game.Players.LocalPlayer.Character
+        for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Knife" then
+          v.Parent = game.Players.LocalPlayer.Character
+        end
+        end
+        local q = z.Knife
+        for _, v in game.Players:GetChildren() do
+        if v ~= z then
+        v.Character.HumanoidRootPart.CFrame = q.Handle.CFrame
+        v.Character.HumanoidRootPart.CanCollide = false
+        q.Stab:FireServer("")
+        q.Stab:FireServer("")
+        q.Stab:FireServer("")
+        q.Stab:FireServer("")
+        q.Stab:FireServer("")
+        end
+ end
+ end
+})
+
+Tab:AddButton({
+    Name = "Fake Knife",
+    Callback = function()
  local lp = game.Players.LocalPlayer
 local tool;local handle;local knife;
 local animation1 = Instance.new("Animation")
@@ -1328,9 +1399,9 @@ end
 
 
 local Tab = Window:MakeTab({
-	Name = "Toggles",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Toggles",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
 --[[
@@ -1343,21 +1414,21 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 
 
 Tab:AddButton({
-	Name = "Get Fake Gun",
-	Callback = function()
-      		local args = {
+    Name = "Get Fake Gun",
+    Callback = function()
+              local args = {
     [1] = true
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Gameplay"):WaitForChild("FakeGun"):FireServer(unpack(args))
-  	end    
+      end    
 })
 
 Tab:AddToggle({
-	Name = "Rain Guns",
-	Default = false,
-	Callback = function(Value)
-		        getgenv().RainGuns = Value
+    Name = "Rain Guns",
+    Default = false,
+    Callback = function(Value)
+                getgenv().RainGuns = Value
         while RainGuns do task.wait(0.1)
         pcall(function()
 local args = {
@@ -1409,10 +1480,48 @@ end
 })
 
 Tab:AddToggle({
-	Name = "Invisible",
-	Default = false,
-	Callback = function(Value)
-		    if Value then
+ Name = "Break Gun",
+ Default = false,
+ Callback = function(Value)
+ breakgunl = false
+ function FindGun(v)
+ if v.Character then
+  local a,b = v.Backpack:FindFirstChild("Gun"), v.Character:FindFirstChild("Gun")
+  if a then
+   return a
+  elseif b then
+   return b
+  end
+  if not a and not b then
+   return false
+  end
+ end
+end
+if Value then
+  if breakgunl == false then
+   breakgunl = true
+   while breakgunl do
+    for _, v in game.Players:GetChildren() do
+     if v ~= game.Players.LocalPlayer then
+      if FindGun(v) then
+       FindGun(v).KnifeServer.ShootGun:InvokeServer(1, 0, "AH")
+      end
+     end
+    end
+    wait(0.4)
+   end
+   end
+  else
+   breakgunl = false
+  end
+ end
+})
+
+Tab:AddToggle({
+    Name = "Invisible",
+    Default = false,
+    Callback = function(Value)
+            if Value then
         local args = {
     [1] = true
 }
@@ -1431,10 +1540,10 @@ end
 })
 
 Tab:AddButton({
-	Name = "SpawnTrap",
-	Callback = function()
-      		game.ReplicatedStorage.TrapSystem.PlaceTrap:InvokeServer(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 0))
-  	end    
+    Name = "SpawnTrap",
+    Callback = function()
+              game.ReplicatedStorage.TrapSystem.PlaceTrap:InvokeServer(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, -1, 0))
+      end    
 })
 
 Tab:AddTextbox({
@@ -1450,7 +1559,7 @@ Tab:AddToggle({
  Name = "Spam Trap Player",
  Default = false,
  Callback = function(Value)
- 		getgenv().SpamTrapTarget = Value
+         getgenv().SpamTrapTarget = Value
          while SpamTrapTarget do task.wait(1.5)
          pcall(function()
          local Target = gplr(getgenv().Target)
@@ -1466,10 +1575,10 @@ end
 
 
 Tab:AddToggle({
-	Name = "Spam Trap Players",
-	Default = false,
-	Callback = function(Value)
-		getgenv().SpamTrap = Value
+    Name = "Spam Trap Players",
+    Default = false,
+    Callback = function(Value)
+        getgenv().SpamTrap = Value
         while SpamTrap do task.wait(1.5)
         pcall(function()
 for _, v in pairs(game.Players:GetChildren()) do
@@ -1490,10 +1599,10 @@ end
 })
 
 Tab:AddToggle({
-	Name = "Spam Trap Murder",
-	Default = false,
-	Callback = function(Value)
-		getgenv().SpamTrapMurder = Value
+    Name = "Spam Trap Murder",
+    Default = false,
+    Callback = function(Value)
+        getgenv().SpamTrapMurder = Value
         while SpamTrapMurder do task.wait(1.5)
         pcall(function()
 for _,v in pairs(game.Players:GetPlayers()) do
@@ -1510,10 +1619,10 @@ end
 })
 
 Tab:AddToggle({
-	Name = "Spam Trap Sheriff",
-	Default = false,
-	Callback = function(Value)
-		getgenv().SpamTrapSheriff = Value
+    Name = "Spam Trap Sheriff",
+    Default = false,
+    Callback = function(Value)
+        getgenv().SpamTrapSheriff = Value
         while SpamTrapSheriff do task.wait(1.5)
         pcall(function()
 for _,v in pairs(game.Players:GetPlayers()) do
@@ -1530,15 +1639,15 @@ end
 })
 
 local Tab = Window:MakeTab({
-	Name = "Settings",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Settings",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "Rejoin",
-	Callback = function()
-	local TeleportService = game:GetService("TeleportService")
+    Name = "Rejoin",
+    Callback = function()
+    local TeleportService = game:GetService("TeleportService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
@@ -1553,13 +1662,13 @@ local Rejoin = coroutine.create(function()
 end)
 
 coroutine.resume(Rejoin)
-	end
+    end
 })
 
 Tab:AddButton({
-	Name = "Switch Server",
-	Callback = function()
-	          local PlaceID = game.PlaceId
+    Name = "Switch Server",
+    Callback = function()
+              local PlaceID = game.PlaceId
           local AllIDs = {}
           local foundAnything = ""
           local actualHour = os.date("!*t").hour
@@ -1631,7 +1740,7 @@ Tab:AddButton({
           end
 
           Teleport()
-	end
+    end
 })
 
 end
