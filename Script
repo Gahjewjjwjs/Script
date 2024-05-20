@@ -2,28 +2,28 @@ gamepassid = 768043728
 ps = game:GetService("MarketplaceService"):UserOwnsGamePassAsync(game.Players.LocalPlayer.UserId, gamepassid)
 if not ps then
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Murder Mystery 2 Script By GTAonvova", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Murder Mystery 2 Script By GTAonvova", HidePremium = false, IntroIcon = "", IntroText = "Myulee Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
-    Name = "Buy",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
+	Name = "Buy",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
 
 local Section = Tab:AddSection({
-    Name = ""
+	Name = ""
 })
 
 Tab:AddButton({
-    Name = "Buy Script",
-    Callback = function()
+	Name = "Buy Script",
+	Callback = function()
 setclipboard("https://www.roblox.com/game-pass/768043728")
 end
 })
 else
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Murder Mystery 2 Script By GTAonvova", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Murder Mystery 2 Script By GTAonvova", HidePremium = false, IntroIcon = "", IntroText = "Myulee Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
     Name = "Gun Maker",
@@ -823,7 +823,7 @@ Tab:AddButton({
             local Players = game:GetService("Players")            
             for i, player in pairs(Players:GetPlayers()) do
                 
-                local bp = player.Backpack:GetChildren()
+                local bp = player.Backpack:GetChildren() or player.Backpack:FindFirstChild("Knife")
                 for i, tool in pairs(bp) do
                     if tool.Name == "Knife" then
                                                     
@@ -842,7 +842,7 @@ Tab:AddButton({
             local Players = game:GetService("Players")            
             for i, player in pairs(Players:GetPlayers()) do
                 
-                local bp = player.Backpack:GetChildren()
+                local bp = player.Backpack:GetChildren() or player.Backpack:FindFirstChild("Gun")
                 for i, tool in pairs(bp) do
                     if tool.Name == "Gun" then
                                                     
@@ -856,9 +856,303 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-    Name = "Spray Paint",
+    Name = "Spray Paint Player",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
+})
+
+Tab:AddToggle({
+    Name = "Auto Equip Spray",
+ Default = false,
+    Callback = function(Value)
+    AutoEquip = false
+    if Value then
+      if AutoEquip == false then
+   AutoEquip = true 
+while AutoEquip do task.wait(0.5)
+local args = {
+    [1] = "SprayPaint"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Extras.ReplicateToy:InvokeServer(unpack(args))
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "SprayPaint" then
+            v.Parent = game.Players.LocalPlayer.Character
+    end
+end
+end
+end
+else 
+AutoEquip = false
+    end
+    end
+})
+
+Tab:AddButton({
+ Name = "Coin",
+ Callback = function()
+local args = {
+    [1] = "SprayPaint"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Extras"):WaitForChild("ReplicateToy"):InvokeServer(unpack(args))
+
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "SprayPaint" then
+            v.Parent = game.Players.LocalPlayer.Character
+    end
+end
+
+local args = {
+    [1] = 14879469700,
+    [2] = Enum.NormalId.Left,
+    [3] = 2,
+    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
+    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = 14879469700,
+    [2] = Enum.NormalId.Right,
+    [3] = 2,
+    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
+    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+
+   end    
+})
+
+Tab:AddButton({
+ Name = "Nikilis Face Reveal Under Player",
+ Callback = function()
+local args = {
+    [1] = "SprayPaint"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Extras"):WaitForChild("ReplicateToy"):InvokeServer(unpack(args))
+
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "SprayPaint" then
+            v.Parent = game.Players.LocalPlayer.Character
+    end
+end
+
+local args = {
+    [1] = 16854902379,
+    [2] = Enum.NormalId.Left,
+    [3] = 10,
+    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
+    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = 16854902379,
+    [2] = Enum.NormalId.Right,
+    [3] = 10,
+    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
+    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+
+   end    
+})
+
+Tab:AddButton({
+ Name = "Nikilis Face Reveal Under Player Big",
+ Callback = function()
+local args = {
+    [1] = "SprayPaint"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Extras"):WaitForChild("ReplicateToy"):InvokeServer(unpack(args))
+
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "SprayPaint" then
+            v.Parent = game.Players.LocalPlayer.Character
+    end
+end
+
+local args = {
+    [1] = 16854902379,
+    [2] = Enum.NormalId.Left,
+    [3] = 30,
+    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
+    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = 16854902379,
+    [2] = Enum.NormalId.Right,
+    [3] = 30,
+    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
+    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+
+   end    
+})
+
+Tab:AddButton({
+ Name = "Nikilis Face Reveal Under Player 2 Big",
+ Callback = function()
+local args = {
+    [1] = "SprayPaint"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Extras"):WaitForChild("ReplicateToy"):InvokeServer(unpack(args))
+
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "SprayPaint" then
+            v.Parent = game.Players.LocalPlayer.Character
+    end
+end
+
+local args = {
+    [1] = 16995921143,
+    [2] = Enum.NormalId.Left,
+    [3] = 30,
+    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
+    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = 16995921143,
+    [2] = Enum.NormalId.Right,
+    [3] = 30,
+    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
+    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+
+   end    
+})
+
+Tab:AddButton({
+    Name = "Box",
+    Callback = function()
+spray = game:GetService("Players").LocalPlayer.Character.SprayPaint
+pos = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position) * CFrame.new(0, 2.6, 0)
+targetpart = workspace.Lobby.InvisWalls.InvisWall
+
+spray.Remote:FireServer(6510703673, Enum.NormalId.Right, 7, targetpart, pos * CFrame.new(0, -2.1, 3.5))
+spray.Remote:FireServer(6510703673, Enum.NormalId.Left, 7, targetpart, pos * CFrame.new(0, -2.1, 3.4))
+spray.Remote:FireServer(6510703673, Enum.NormalId.Right, 7, targetpart, pos * CFrame.new(0, -2.1, -3.4))
+spray.Remote:FireServer(6510703673, Enum.NormalId.Left, 7, targetpart, pos * CFrame.new(0, -2.1, -3.5))
+spray.Remote:FireServer(6510703673, Enum.NormalId.Front, 7, targetpart, pos * CFrame.new(3.5, -2.1, 0))
+spray.Remote:FireServer(6510703673, Enum.NormalId.Back, 7, targetpart, pos * CFrame.new(3.4, -2.1, 0))
+spray.Remote:FireServer(6510703673, Enum.NormalId.Front, 7, targetpart, pos * CFrame.new(-3.4, -2.1, 0))
+spray.Remote:FireServer(6510703673, Enum.NormalId.Back, 7, targetpart, pos * CFrame.new(-3.5, -2.1, 0))
+spray.Remote:FireServer(6510703673, Enum.NormalId.Top, 7, targetpart, pos * CFrame.new(0, 1.3, 0))
+spray.Remote:FireServer(6510703673, Enum.NormalId.Bottom, 7, targetpart, pos * CFrame.new(0, 1.5, 0))
+spray.Remote:FireServer(6510703673, Enum.NormalId.Top, 7, targetpart, pos * CFrame.new(0, -5.7, 0))
+spray.Remote:FireServer(6510703673, Enum.NormalId.Bottom, 7, targetpart, pos * CFrame.new(0, -5.5, 0))
+end
+})
+
+Tab:AddButton({
+    Name = "Jail",
+    Callback = function()
+spray = game:GetService("Players").LocalPlayer.Character.SprayPaint
+pos = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position) * CFrame.new(0, 2.6, 0)
+targetpart = workspace.Lobby.InvisWalls.InvisWall
+
+spray.Remote:FireServer(14150429967, Enum.NormalId.Right, 10, targetpart, pos * CFrame.new(0, 0, 5))
+spray.Remote:FireServer(14150429967, Enum.NormalId.Left, 10, targetpart, pos * CFrame.new(0, 0, 4.9))
+spray.Remote:FireServer(14150429967, Enum.NormalId.Right, 10, targetpart, pos * CFrame.new(0, 0, -4.9))
+spray.Remote:FireServer(14150429967, Enum.NormalId.Left, 10, targetpart, pos * CFrame.new(0, 0, -5))
+spray.Remote:FireServer(14150429967, Enum.NormalId.Front, 10, targetpart, pos * CFrame.new(5, 0, 0))
+spray.Remote:FireServer(14150429967, Enum.NormalId.Back, 10, targetpart, pos * CFrame.new(4.9, 0, 0))
+spray.Remote:FireServer(14150429967, Enum.NormalId.Front, 10, targetpart, pos * CFrame.new(-4.9, 0, 0))
+spray.Remote:FireServer(14150429967, Enum.NormalId.Back, 10, targetpart, pos * CFrame.new(-5, 0, 0))
+spray.Remote:FireServer(14150429967, Enum.NormalId.Top, 10, targetpart, pos * CFrame.new(0, 4.9, 0))
+spray.Remote:FireServer(14150429967, Enum.NormalId.Bottom, 10, targetpart, pos * CFrame.new(0, 5, 0))
+spray.Remote:FireServer(14150429967, Enum.NormalId.Top, 10, targetpart, pos * CFrame.new(0, -5, 0))
+spray.Remote:FireServer(14150429967, Enum.NormalId.Bottom, 10, targetpart, pos * CFrame.new(0, -4.9, 0))
+end
+})
+
+local Tab = Window:MakeTab({
+    Name = "Spray Paint Players",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "Commands All Players",
+    Callback = function()
+Player = game.Players.LocalPlayer
+Players = game.Players
+
+function resetplayer(plr)
+    local q = FindToolSpray()
+    if q then
+        if plr.Character then
+            if plr.Character:FindFirstChild("HumanoidRootPart") then
+                q.Remote:FireServer(0, Enum.NormalId.Front, 2048, plr.Character:FindFirstChild("HumanoidRootPart"), CFrame.new(0, -1000, 0))
+            end
+        end
+    end
+end
+
+function MainCommands(plr, msg)
+    if msg == "nocl" then
+local args = {
+    [1] = 1,
+    [2] = Enum.NormalId.Front,
+    [3] = 2048,
+    [4] = plr.Character.HumanoidRootPart,
+    [5] = CFrame.new(0, -25000, 0) * CFrame.Angles(-0, 0, -0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+local args = {
+    [1] = 1,
+    [2] = Enum.NormalId.Front,
+    [3] = 2048,
+    [4] = plr.Character.HumanoidRootPart,
+    [5] = CFrame.new(0, 25000, 0) * CFrame.Angles(-0, 0, -0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+end
+    if msg == "fl" then
+local args = {
+    [1] = 13593261250,
+    [2] = Enum.NormalId.Front,
+    [3] = 2048,
+    [4] = plr.Character.UpperTorso,
+    [5] = plr.Character.HumanoidRootPart.CFrame * CFrame.new(0,30,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+    end
+end
+
+for _, v in Players:GetChildren() do
+        v.Chatted:Connect(function(msg)
+            MainCommands(v, msg)
+        end)
+    end
+
+Players.PlayerAdded:Connect(function(plr)
+    plr.Chatted:Connect(function(msg)
+        MainCommands(plr, msg)
+    end)
+end)
+end
 })
 
 Tab:AddButton({
@@ -1000,41 +1294,31 @@ end
 })
 
 Tab:AddButton({
- Name = "Coin",
- Callback = function()
-local args = {
-    [1] = "SprayPaint"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Extras"):WaitForChild("ReplicateToy"):InvokeServer(unpack(args))
-
-for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-        if v.name == "SprayPaint" then
-            v.Parent = game.Players.LocalPlayer.Character
-    end
-end
+    Name = "Bag All",
+    Callback = function()
+for _, v in pairs(game.Players:GetPlayers()) do
 
 local args = {
-    [1] = 14879469700,
+    [1] = 9374371322,
     [2] = Enum.NormalId.Left,
-    [3] = 2,
-    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
-    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
+    [3] = 4,
+    [4] = v.Character.RightUpperArm,
+    [5] = v.Character.RightUpperArm.CFrame * CFrame.new(0.5,-2,0)
 }
 
 game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
 
 local args = {
-    [1] = 14879469700,
+    [1] = 9374371322,
     [2] = Enum.NormalId.Right,
-    [3] = 2,
-    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
-    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
+    [3] = 4,
+    [4] = v.Character.RightUpperArm,
+    [5] = v.Character.RightUpperArm.CFrame * CFrame.new(0.5,-2,0)
 }
 
 game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
-
-   end    
+end
+end
 })
 
 Tab:AddButton({
@@ -1078,118 +1362,176 @@ game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(un
    end
 })
 
-Tab:AddButton({
- Name = "Nikilis Face Reveal Under Player",
- Callback = function()
-local args = {
-    [1] = "SprayPaint"
-}
 
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Extras"):WaitForChild("ReplicateToy"):InvokeServer(unpack(args))
 
-for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-        if v.name == "SprayPaint" then
-            v.Parent = game.Players.LocalPlayer.Character
-    end
-end
-
-local args = {
-    [1] = 16854902379,
-    [2] = Enum.NormalId.Left,
-    [3] = 10,
-    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
-    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
-}
-
-game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+Tab:AddDropdown({
+  Name = "Glitch Player",
+  Options = playerNames,
+  Default = "2",
+  Callback = function(selectedplrName)
+    plrs:FindFirstChild(selectedplrName)
+        local targetPlayer = plrs:FindFirstChild(selectedplrName)
+        if targetPlayer and targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+            -- Teleporting your character to the selected player's position
+            local targetPosition = targetPlayer.Character.HumanoidRootPart.Position
+            local localPlayerRoot = plrs.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+            
+            if localPlayerRoot then
 
 local args = {
-    [1] = 16854902379,
-    [2] = Enum.NormalId.Right,
-    [3] = 10,
-    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
-    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
+    [1] = 13593261250,
+    [2] = Enum.NormalId.Front,
+    [3] = 2048,
+    [4] = targetPlayer.Character.UpperTorso,
+    [5] = targetPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,30,0)
 }
 
 game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
 
-   end    
+            end
+        end
+        print(selectedplrName)
+
+  end
+
 })
 
 Tab:AddButton({
- Name = "Nikilis Face Reveal Under Player Big",
- Callback = function()
+    Name = "Glitch All",
+    Callback = function()
+for _, v in pairs(game.Players:GetPlayers()) do
+if v ~= game.Players.LocalPlayer then
 local args = {
-    [1] = "SprayPaint"
+    [1] = 13593261250,
+    [2] = Enum.NormalId.Front,
+    [3] = 2048,
+    [4] = v.Character.UpperTorso,
+    [5] = v.Character.HumanoidRootPart.CFrame * CFrame.new(0,30,0)
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Extras"):WaitForChild("ReplicateToy"):InvokeServer(unpack(args))
-
-for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-        if v.name == "SprayPaint" then
-            v.Parent = game.Players.LocalPlayer.Character
-    end
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
 end
-
-local args = {
-    [1] = 16854902379,
-    [2] = Enum.NormalId.Left,
-    [3] = 30,
-    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
-    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
-}
-
-game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
-
-local args = {
-    [1] = 16854902379,
-    [2] = Enum.NormalId.Right,
-    [3] = 30,
-    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
-    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
-}
-
-game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
-
-   end    
+end
+end
 })
 
 Tab:AddButton({
- Name = "Nikilis Face Reveal Under Player 2 Big",
- Callback = function()
+    Name = "Noclip",
+    Callback = function()
+for _, v in pairs(game.Players:GetPlayers()) do
+if v ~= game.Players.LocalPlayer then
 local args = {
-    [1] = "SprayPaint"
+    [1] = 1,
+    [2] = Enum.NormalId.Front,
+    [3] = 2048,
+    [4] = v.Character.HumanoidRootPart,
+    [5] = CFrame.new(0, -25000, 0) * CFrame.Angles(-0, 0, -0)
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Extras"):WaitForChild("ReplicateToy"):InvokeServer(unpack(args))
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+local args = {
+    [1] = 1,
+    [2] = Enum.NormalId.Front,
+    [3] = 2048,
+    [4] = v.Character.HumanoidRootPart,
+    [5] = CFrame.new(0, 25000, 0) * CFrame.Angles(-0, 0, -0)
+}
 
-for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-        if v.name == "SprayPaint" then
-            v.Parent = game.Players.LocalPlayer.Character
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+    end
+    end
+    end
+})
+
+Tab:AddToggle({
+    Name = "Auto Noclip All",
+ Default = false,
+    Callback = function(Value)
+    Noclip = false
+    if Value then
+for _, v in pairs(game.Players:GetPlayers()) do
+if v ~= game.Players.LocalPlayer then
+local args = {
+    [1] = 1,
+    [2] = Enum.NormalId.Front,
+    [3] = 2048,
+    [4] = v.Character.HumanoidRootPart,
+    [5] = CFrame.new(0, -25000, 0) * CFrame.Angles(-0, 0, -0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+local args = {
+    [1] = 1,
+    [2] = Enum.NormalId.Front,
+    [3] = 2048,
+    [4] = v.Character.HumanoidRootPart,
+    [5] = CFrame.new(0, 25000, 0) * CFrame.Angles(-0, 0, -0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+    end
+    end
+      if Noclip == false then
+   Noclip = true 
+while Noclip do task.wait(10)
+for _, v in pairs(game.Players:GetPlayers()) do
+if v ~= game.Players.LocalPlayer then
+local args = {
+    [1] = 1,
+    [2] = Enum.NormalId.Front,
+    [3] = 2048,
+    [4] = v.Character.HumanoidRootPart,
+    [5] = CFrame.new(0, -25000, 0) * CFrame.Angles(-0, 0, -0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+local args = {
+    [1] = 1,
+    [2] = Enum.NormalId.Front,
+    [3] = 2048,
+    [4] = v.Character.HumanoidRootPart,
+    [5] = CFrame.new(0, 25000, 0) * CFrame.Angles(-0, 0, -0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+    end
+    end
     end
 end
+else 
+Noclip = false
+    end
+    end
+})
 
+Tab:AddDropdown({
+  Name = "Reset Player",
+  Options = playerNames,
+  Default = "2",
+  Callback = function(selectedplrName)
+    plrs:FindFirstChild(selectedplrName)
+        local targetPlayer = plrs:FindFirstChild(selectedplrName)
+        if targetPlayer and targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+            -- Teleporting your character to the selected player's position
+            local targetPosition = targetPlayer.Character.HumanoidRootPart.Position
+            local localPlayerRoot = plrs.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+            
+            if localPlayerRoot then
 local args = {
-    [1] = 16995921143,
-    [2] = Enum.NormalId.Left,
-    [3] = 30,
-    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
-    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
+    [1] = 15017766279,
+    [2] = Enum.NormalId.Front,
+    [3] = 2048,
+    [4] = targetPlayer.Character.HumanoidRootPart,
+    [5] = CFrame.new(0,-1000,0)
 }
 
 game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+            end
+        end
+        print(selectedplrName)
 
-local args = {
-    [1] = 16995921143,
-    [2] = Enum.NormalId.Right,
-    [3] = 30,
-    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
-    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-1.7,0)
-}
+  end
 
-game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
-
-   end    
 })
 
 Tab:AddButton({
@@ -1230,29 +1572,12 @@ end
 })
 
 Tab:AddToggle({
-	Name = "Loop Reset All",
+    Name = "Loop Reset All",
  Default = false,
-	Callback = function(Value)
-	LoopResetAll = false
-	if Value then
-local args = {
-    [1] = "SprayPaint"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Extras"):WaitForChild("ReplicateToy"):InvokeServer(unpack(args))
-
-for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-        if v.name == "Emotes" then
-            v.Parent = game.Players.LocalPlayer.Character
-    end
-end
-
-for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-        if v.name == "SprayPaint" then
-            v.Parent = game.Players.LocalPlayer.Character
-    end
-end
-	  if LoopResetAll == false then
+    Callback = function(Value)
+    LoopResetAll = false
+    if Value then
+      if LoopResetAll == false then
    LoopResetAll = true 
 while LoopResetAll do task.wait(0.9)
 for _, v in pairs(game.Players:GetPlayers()) do
@@ -1272,9 +1597,10 @@ end
 end
 else 
 LoopResetAll = false
-	end
-	end
+    end
+    end
 })
+
 
 local Tab = Window:MakeTab({
     Name = "Misc",
