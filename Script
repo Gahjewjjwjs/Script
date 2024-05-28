@@ -888,6 +888,38 @@ AutoEquip = false
     end
 })
 
+Tab:AddTextbox({
+ Name = "Size Spray",
+ Default = "10",
+ TextDisappear = false,
+ Callback = function(size)
+ getgenv().Size = size
+ end   
+})
+
+Tab:AddToggle({
+ Name = "Spray Paint No Cooldown And Inf Range And Size",
+ Default = false,
+ Callback = function(Value)
+ if Value then
+ ms = game.Players.LocalPlayer:GetMouse()
+local spr11 = nil
+function SprayOnOff()
+    if spr11 == nil then
+        spr11 = ms.Button1Down:Connect(function()
+            game.Players.LocalPlayer.Character.SprayPaint.Remote:FireServer(80373024, ms.TargetSurface, tonumber(getgenv().Size), ms.Target, ms.Hit)
+        end)
+    else
+        spr11:Disconnect()
+        spr11 = nil
+    end
+end
+
+SprayOnOff()
+end
+end
+})
+
 Tab:AddButton({
  Name = "Coin",
  Callback = function()
@@ -1041,6 +1073,31 @@ game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(un
 })
 
 Tab:AddButton({
+ Name = "Noob",
+ Callback = function()
+
+local args = {
+    [1] = 17612108926,
+    [2] = Enum.NormalId.Left,
+    [3] = 6,
+    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
+    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = 17612105024,
+    [2] = Enum.NormalId.Right,
+    [3] = 6,
+    [4] = workspace:WaitForChild("Lobby"):WaitForChild("InvisWalls"):WaitForChild("InvisWall"),
+    [5] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+   end
+})
+Tab:AddButton({
     Name = "Box",
     Callback = function()
 spray = game:GetService("Players").LocalPlayer.Character.SprayPaint
@@ -1081,6 +1138,28 @@ spray.Remote:FireServer(14150429967, Enum.NormalId.Top, 10, targetpart, pos * CF
 spray.Remote:FireServer(14150429967, Enum.NormalId.Bottom, 10, targetpart, pos * CFrame.new(0, 5, 0))
 spray.Remote:FireServer(14150429967, Enum.NormalId.Top, 10, targetpart, pos * CFrame.new(0, -5, 0))
 spray.Remote:FireServer(14150429967, Enum.NormalId.Bottom, 10, targetpart, pos * CFrame.new(0, -4.9, 0))
+end
+})
+
+Tab:AddButton({
+    Name = "TNT",
+    Callback = function()
+spray = game:GetService("Players").LocalPlayer.Character.SprayPaint
+pos = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position) * CFrame.new(0, 2.6, 0)
+targetpart = workspace.Lobby.InvisWalls.InvisWall
+
+spray.Remote:FireServer(5522032345, Enum.NormalId.Right, 10, targetpart, pos * CFrame.new(0, 0, 5))
+spray.Remote:FireServer(5522032345, Enum.NormalId.Left, 10, targetpart, pos * CFrame.new(0, 0, 4.9))
+spray.Remote:FireServer(5522032345, Enum.NormalId.Right, 10, targetpart, pos * CFrame.new(0, 0, -4.9))
+spray.Remote:FireServer(5522032345, Enum.NormalId.Left, 10, targetpart, pos * CFrame.new(0, 0, -5))
+spray.Remote:FireServer(5522032345, Enum.NormalId.Front, 10, targetpart, pos * CFrame.new(5, 0, 0))
+spray.Remote:FireServer(5522032345, Enum.NormalId.Back, 10, targetpart, pos * CFrame.new(4.9, 0, 0))
+spray.Remote:FireServer(5522032345, Enum.NormalId.Front, 10, targetpart, pos * CFrame.new(-4.9, 0, 0))
+spray.Remote:FireServer(5522032345, Enum.NormalId.Back, 10, targetpart, pos * CFrame.new(-5, 0, 0))
+spray.Remote:FireServer(5522034044, Enum.NormalId.Top, 10, targetpart, pos * CFrame.new(0, 4.9, 0))
+spray.Remote:FireServer(5522034044, Enum.NormalId.Bottom, 10, targetpart, pos * CFrame.new(0, 5, 0))
+spray.Remote:FireServer(5522035182, Enum.NormalId.Top, 10, targetpart, pos * CFrame.new(0, -5, 0))
+spray.Remote:FireServer(5522035182, Enum.NormalId.Bottom, 10, targetpart, pos * CFrame.new(0, -4.9, 0))
 end
 })
 
@@ -1239,6 +1318,24 @@ local args = {
 
 game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
 end
+if msg == "tnt" then
+spray = game:GetService("Players").LocalPlayer.Character.SprayPaint
+pos = CFrame.new(plr.Character.HumanoidRootPart.Position) * CFrame.new(0, 2.6, 0)
+targetpart = workspace.Lobby.InvisWalls.InvisWall
+
+spray.Remote:FireServer(5522032345, Enum.NormalId.Right, 10, targetpart, pos * CFrame.new(0, 0, 5))
+spray.Remote:FireServer(5522032345, Enum.NormalId.Left, 10, targetpart, pos * CFrame.new(0, 0, 4.9))
+spray.Remote:FireServer(5522032345, Enum.NormalId.Right, 10, targetpart, pos * CFrame.new(0, 0, -4.9))
+spray.Remote:FireServer(5522032345, Enum.NormalId.Left, 10, targetpart, pos * CFrame.new(0, 0, -5))
+spray.Remote:FireServer(5522032345, Enum.NormalId.Front, 10, targetpart, pos * CFrame.new(5, 0, 0))
+spray.Remote:FireServer(5522032345, Enum.NormalId.Back, 10, targetpart, pos * CFrame.new(4.9, 0, 0))
+spray.Remote:FireServer(5522032345, Enum.NormalId.Front, 10, targetpart, pos * CFrame.new(-4.9, 0, 0))
+spray.Remote:FireServer(5522032345, Enum.NormalId.Back, 10, targetpart, pos * CFrame.new(-5, 0, 0))
+spray.Remote:FireServer(5522034044, Enum.NormalId.Top, 10, targetpart, pos * CFrame.new(0, 4.9, 0))
+spray.Remote:FireServer(5522034044, Enum.NormalId.Bottom, 10, targetpart, pos * CFrame.new(0, 5, 0))
+spray.Remote:FireServer(5522035182, Enum.NormalId.Top, 10, targetpart, pos * CFrame.new(0, -5, 0))
+spray.Remote:FireServer(5522035182, Enum.NormalId.Bottom, 10, targetpart, pos * CFrame.new(0, -4.9, 0))
+end
     if msg == "fl" then
 local args = {
     [1] = 13593261250,
@@ -1264,6 +1361,83 @@ Players.PlayerAdded:Connect(function(plr)
     end)
 end)
 end
+})
+
+Tab:AddTextbox({
+ Name = "Id ",
+ Default = "type id of image",
+ TextDisappear = false,
+ Callback = function(id)
+ getgenv().id = id
+ end   
+})
+
+Tab:AddDropdown({
+  Name = "Custom Image On Player",
+  Options = playerNames,
+  Default = "2",
+  Callback = function(selectedplrName)
+    plrs:FindFirstChild(selectedplrName)
+        local targetPlayer = plrs:FindFirstChild(selectedplrName)
+        if targetPlayer and targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+            -- Teleporting your character to the selected player's position
+            local targetPosition = targetPlayer.Character.HumanoidRootPart.Position
+            local localPlayerRoot = plrs.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+            
+            if localPlayerRoot then
+                
+local args = {
+    [1] = tonumber(getgenv().id),
+    [2] = Enum.NormalId.Front,
+    [3] = 6,
+    [4] = targetPlayer.Character.HumanoidRootPart,
+    [5] = targetPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,1,1)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = tonumber(getgenv().id),
+    [2] = Enum.NormalId.Back,
+    [3] = 6,
+    [4] = targetPlayer.Character.HumanoidRootPart,
+    [5] = targetPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,1,1)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+            end
+        end
+        print(selectedplrName)
+
+  end
+
+})
+
+Tab:AddButton({
+    Name = "Custom Image On All Players",
+    Callback = function()
+    for _, v in pairs(game.Players:GetPlayers()) do
+local args = {
+    [1] = tonumber(getgenv().id),
+    [2] = Enum.NormalId.Front,
+    [3] = 6,
+    [4] = v.Character.HumanoidRootPart,
+    [5] = v.Character.HumanoidRootPart.CFrame * CFrame.new(0,1,1)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+
+local args = {
+    [1] = tonumber(getgenv().id),
+    [2] = Enum.NormalId.Back,
+    [3] = 6,
+    [4] = v.Character.HumanoidRootPart,
+    [5] = v.Character.HumanoidRootPart.CFrame * CFrame.new(0,1,1)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+end
+    end
 })
 
 Tab:AddButton({
@@ -1688,6 +1862,7 @@ Tab:AddToggle({
     Callback = function(Value)
     LoopResetAll = false
     if Value then
+    
       if LoopResetAll == false then
    LoopResetAll = true 
 while LoopResetAll do task.wait(0.9)
@@ -1710,6 +1885,143 @@ else
 LoopResetAll = false
     end
     end
+})
+
+local Tab = Window:MakeTab({
+    Name = "Spray Paint Map",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddTextbox({
+ Name = "Id",
+ Default = "",
+ TextDisappear = false,
+ Callback = function(id2)
+ getgenv().Id2 = id2
+ end   
+})
+
+Tab:AddToggle({
+ Name = "Custom Image On Coins",
+ Default = false,
+ Callback = function(Value)
+ CoinCustom = false
+ if Value then
+ 	for _, i in pairs(game.Workspace.Normal.CoinContainer:GetChildren()) do
+							if i.Name == "Coin_Server" then
+local args = {
+    [1] = tonumber(getgenv().Id2),
+    [2] = Enum.NormalId.Front,
+    [3] = 5,
+    [4] = i.CoinVisual,
+    [5] = i.CoinVisual.CFrame * CFrame.new(0,0,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+local args = {
+    [1] = tonumber(getgenv().Id2),
+    [2] = Enum.NormalId.Back,
+    [3] = 5,
+    [4] = i.CoinVisual,
+    [5] = i.CoinVisual.CFrame * CFrame.new(0,0,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+end
+end
+ if CoinCustom == false then
+ CoinCustom = true
+ while CoinCustom do task.wait(5)
+	for _, i in pairs(game.Workspace.Normal.CoinContainer:GetChildren()) do
+							if i.Name == "Coin_Server" then
+local args = {
+    [1] = tonumber(getgenv().Id2),
+    [2] = Enum.NormalId.Front,
+    [3] = 5,
+    [4] = i.CoinVisual,
+    [5] = i.CoinVisual.CFrame * CFrame.new(0,0,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+local args = {
+    [1] = tonumber(getgenv().Id2),
+    [2] = Enum.NormalId.Back,
+    [3] = 5,
+    [4] = i.CoinVisual,
+    [5] = i.CoinVisual.CFrame * CFrame.new(0,0,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+end
+end
+end
+else
+CoinCustom = false
+end
+end
+end
+})
+
+Tab:AddToggle({
+ Name = "Gun On Coins",
+ Default = false,
+ Callback = function(Value)
+ Coin = false
+ if Value then
+ 	for _, i in pairs(game.Workspace.Normal.CoinContainer:GetChildren()) do
+							if i.Name == "Coin_Server" then
+local args = {
+    [1] = 17646290603,
+    [2] = Enum.NormalId.Front,
+    [3] = 5,
+    [4] = i.CoinVisual,
+    [5] = i.CoinVisual.CFrame * CFrame.new(0,0,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+local args = {
+    [1] = 17646290603,
+    [2] = Enum.NormalId.Back,
+    [3] = 5,
+    [4] = i.CoinVisual,
+    [5] = i.CoinVisual.CFrame * CFrame.new(0,0,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+end
+end
+ if Coin == false then
+ Coin = true
+ while Coin do task.wait(3)
+	for _, i in pairs(game.Workspace.Normal.CoinContainer:GetChildren()) do
+							if i.Name == "Coin_Server" then
+local args = {
+    [1] = 17646290603,
+    [2] = Enum.NormalId.Front,
+    [3] = 5,
+    [4] = i.CoinVisual,
+    [5] = i.CoinVisual.CFrame * CFrame.new(0,0,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+local args = {
+    [1] = 17646290603,
+    [2] = Enum.NormalId.Back,
+    [3] = 5,
+    [4] = i.CoinVisual,
+    [5] = i.CoinVisual.CFrame * CFrame.new(0,0,0)
+}
+
+game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(unpack(args))
+end
+end
+end
+else
+Coin = false
+end
+end
+end
 })
 
 
